@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Newbook Toolkit 2.0</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 24px;
+      line-height: 1.6;
+      color: #333;
+    }
+    h1 { color: #141B4D; margin-bottom: 4px; }
+    h2 { color: #004F59; margin-top: 32px; }
+    h3 { color: #555; }
+    table { border-collapse: collapse; width: 100%; margin: 12px 0; }
+    th, td { border: 1px solid #ddd; padding: 8px 12px; text-align: left; font-size: 14px; }
+    th { background: #f5f5f5; }
+    code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 13px; }
+    .updated { color: #666; font-size: 14px; margin-bottom: 32px; }
+    ul { padding-left: 24px; }
+    li { margin-bottom: 4px; }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy — Newbook Toolkit 2.0</h1>
+  <p class="updated"><strong>Last updated:</strong> 6 May 2026</p>
+
+  <h2>Overview</h2>
+  <p>Newbook Toolkit 2.0 is a browser extension built by the Newbook Implementation Team (Storable) for internal use by Newbook staff. It provides workflow automation tools for client onboarding and property management system configuration.</p>
+
+  <h2>Data Collection</h2>
+  <p>Newbook Toolkit 2.0 does <strong>not</strong> collect, transmit, or sell any personal data to third parties. All user data remains within systems already authorised by the user's organisation.</p>
+
+  <h3>What the extension stores locally</h3>
+  <p>The following data is stored in your browser's local storage (<code>chrome.storage.local</code>) and never leaves your device:</p>
+  <ul>
+    <li>Google OAuth token (for authenticated API access)</li>
+    <li>Atlassian email and API token (for Confluence integration)</li>
+    <li>Monday.com API token (for bug/feature reporting)</li>
+    <li>Extension preferences and UI state</li>
+    <li>Labour tracking session data (timers, client IDs)</li>
+    <li>Wellness tracker settings (break intervals, reminders)</li>
+    <li>Meeting reminder preferences</li>
+  </ul>
+
+  <h3>What the extension communicates with</h3>
+  <p>The extension communicates only with the following services, using credentials you explicitly provide:</p>
+  <table>
+    <tr><th>Service</th><th>Purpose</th><th>Data Sent</th></tr>
+    <tr><td>Newbook Cloud (<code>*.newbook.cloud</code>)</td><td>Read and modify property/site data in the active tab</td><td>Page interactions on Newbook pages you navigate to</td></tr>
+    <tr><td>Google APIs (<code>*.googleapis.com</code>)</td><td>Google Sheets export, Drive folder creation, Gmail draft composition, Calendar read (meeting reminders)</td><td>Authenticated requests using your Google Workspace account</td></tr>
+    <tr><td>Atlassian Confluence (<code>*.atlassian.net</code>)</td><td>Create and read client checklist pages</td><td>Page content, client project metadata</td></tr>
+    <tr><td>Plivo API (<code>api.plivo.com</code>)</td><td>10DLC campaign status lookups</td><td>Campaign identifiers</td></tr>
+    <tr><td>Monday.com API (<code>api.monday.com</code>)</td><td>Submit bug reports and feature requests</td><td>Report content you explicitly submit</td></tr>
+    <tr><td>Gmail (<code>mail.google.com</code>)</td><td>Export open emails as PDF/Sheet</td><td>Email content on pages you explicitly trigger export on</td></tr>
+  </table>
+
+  <h2>Authentication</h2>
+  <ul>
+    <li><strong>Google:</strong> Uses Chrome's built-in <code>chrome.identity</code> OAuth 2.0 flow. The extension requests only the scopes necessary for its features. You can revoke access at any time via your Google Account permissions.</li>
+    <li><strong>Atlassian:</strong> Uses HTTP Basic Auth with an API token you generate and provide. Stored locally in your browser only.</li>
+    <li><strong>Monday.com:</strong> Uses a personal API token you provide. Stored locally in your browser only.</li>
+  </ul>
+
+  <h2>Permissions</h2>
+  <p>The extension requests only the permissions necessary for its functionality. See the Chrome Web Store listing for a full breakdown of each permission and its justification.</p>
+
+  <h2>Data Retention</h2>
+  <p>All locally stored data can be cleared at any time by:</p>
+  <ul>
+    <li>Disconnecting accounts within the extension's "Configure Connections" panel</li>
+    <li>Removing the extension from your browser</li>
+    <li>Clearing browser extension storage</li>
+  </ul>
+  <p>No data persists on any external server controlled by this extension.</p>
+
+  <h2>Third-Party Services</h2>
+  <p>This extension does not use analytics, tracking pixels, advertising networks, or any third-party data collection services.</p>
+
+  <h2>Who Can Use This Extension</h2>
+  <p>This extension is intended for use by authorised Newbook (Storable) staff only. It requires valid credentials for Newbook Cloud and related internal systems to function.</p>
+
+  <h2>Changes to This Policy</h2>
+  <p>Updates to this policy will be published at this URL. Continued use of the extension after changes constitutes acceptance.</p>
+
+  <h2>Contact</h2>
+  <p>For questions about this privacy policy or the extension's data practices:</p>
+  <ul>
+    <li><strong>Team:</strong> Newbook Implementation (Setup)</li>
+    <li><strong>Company:</strong> Storable</li>
+    <li><strong>Contact:</strong> bart.easdown@storable.com</li>
+  </ul>
+</body>
+</html>
